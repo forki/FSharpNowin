@@ -4,6 +4,7 @@ nuget FSharp.Formatting
 nuget Microsoft.Owin.Hosting
 nuget NUnit
 nuget NUnit.Runners
+nuget Nancy.Owin
 nuget Nowin
 nuget Nuget.CommandLine
 nuget FAKE
