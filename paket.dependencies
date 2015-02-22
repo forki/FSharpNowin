@@ -1,8 +1,10 @@
 source https://nuget.org/api/v2
 
 nuget FSharp.Formatting
-nuget NUnit 
+nuget Microsoft.Owin.Hosting
+nuget NUnit
 nuget NUnit.Runners
+nuget Nowin
 nuget Nuget.CommandLine
 nuget FAKE
 nuget SourceLink.Fake
