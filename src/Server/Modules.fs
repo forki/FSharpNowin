@@ -1,13 +1,14 @@
 ﻿module Modules 
+    open ServiceStack.OrmLite
     open Nancy
-    open Nancy.Responses
-    open Nancy.Responses.Negotiation
     open Fancy
+    open ServiceStack.Data
 
-    type HomeModule() as this =
+    type HomeModule(db:IDbConnectionFactory) as this =
         inherit NancyModule()
         do fancy this {
             get "/" (fun () -> fancyAsync {
+                use conn = db.Open()                
                 return "Hello world1"
             })
         }

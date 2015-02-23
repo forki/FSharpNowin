@@ -8,6 +8,7 @@ nuget Nancy.Owin
 nuget Nowin
 nuget Nuget.CommandLine
 nuget FAKE
+nuget ServiceStack.OrmLite.Sqlite.Mono
 nuget SourceLink.Fake
 
 github fsharp/FAKE modules/Octokit/Octokit.fsx

@@ -1,3 +1,4 @@
 Nowin
 Microsoft.Owin.Hosting
 Nancy.Owin
+ServiceStack.OrmLite.Sqlite.Mono

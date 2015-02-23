@@ -30,6 +30,15 @@ NUGET
     Octokit (0.6.2)
       Microsoft.Net.Http
     Owin (1.0)
+    ServiceStack.Common (4.0.36)
+      ServiceStack.Interfaces (>= 4.0.36)
+      ServiceStack.Text (>= 4.0.36)
+    ServiceStack.Interfaces (4.0.36)
+    ServiceStack.OrmLite (4.0.36)
+      ServiceStack.Common (>= 4.0.36)
+    ServiceStack.OrmLite.Sqlite.Mono (4.0.36)
+      ServiceStack.OrmLite (>= 4.0.36)
+    ServiceStack.Text (4.0.36)
     SourceLink.Fake (0.4.2)
 GITHUB
   remote: fsharp/FAKE
