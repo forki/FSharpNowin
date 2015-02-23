@@ -2,24 +2,7 @@
 open Microsoft.Owin.Hosting
 open Owin
 open System.Threading.Tasks
-open Nancy
-open Nancy.Responses
-open Nancy.Responses.Negotiation
-open Fancy
 open System.Diagnostics
-
-
-type HomeModule() as this =
-    inherit NancyModule()
-    do fancy this {
-        get "/" (
-            fun () -> 
-        fancyAsync {       
-            Debugger.Break()  
-            return "Hello world"}
-        )
-    }
-
 
 [<EntryPoint>]
 let main argv = 
