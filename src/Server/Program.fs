@@ -3,20 +3,23 @@ open Microsoft.Owin.Hosting
 open Owin
 open System.Threading.Tasks
 open Nancy
+open Nancy.Responses
+open Nancy.Responses.Negotiation
+open Fancy
+open System.Diagnostics
 
-let processor ctx c = None |> async.Return
-    
+
 type HomeModule() as this =
     inherit NancyModule()
-    do this.Before.AddItemToEndOfPipeline(
-                fun ctx c -> Async.StartAsTask(async {
-                    let! res = processor ctx c
-                    return match res with 
-                                | Some x -> x
-                                | None -> null
-                }))
-    do this.Get.["/"] <- (fun param -> 
-                            "Hello world" :> obj)
+    do fancy this {
+        get "/" (
+            fun () -> 
+        fancyAsync {       
+            Debugger.Break()  
+            return "Hello world"}
+        )
+    }
+
 
 [<EntryPoint>]
 let main argv = 
