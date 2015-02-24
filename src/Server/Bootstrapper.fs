@@ -12,4 +12,4 @@ type Bootstrapper() =
         StaticConfiguration.DisableErrorTraces <- false
         container.Register<IDbConnectionFactory>(factory) |> ignore
         base.ApplicationStartup(container,pipelines)
-        ignore()
+ 
