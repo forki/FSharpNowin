@@ -8,7 +8,7 @@
         inherit NancyModule()
         do fancy this {
             get "/" (fun () -> fancyAsync {
-                use conn = db.Open()                
-                return "Hello world1"
+                //use conn = db.Open()                
+                return this.View.["Home"]
             })
         }
