@@ -2,14 +2,18 @@ source https://nuget.org/api/v2
 
 nuget Bootstrap
 nuget FSharp.Formatting
+nuget FsCheck 0.9.2.0
+nuget FsUnit 1.2.1.0
 nuget Microsoft.Owin.Hosting
 nuget NUnit
 nuget NUnit.Runners
+nuget NUnitTestAdapter
 nuget Nancy.Owin
 nuget Nowin
 nuget Nuget.CommandLine
 nuget FAKE
 nuget ServiceStack.OrmLite.Sqlite.Mono
 nuget SourceLink.Fake
+nuget Unquote 2.2.2
 
 github fsharp/FAKE modules/Octokit/Octokit.fsx

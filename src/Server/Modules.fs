@@ -3,7 +3,7 @@
     open Nancy
     open Fancy
     open ServiceStack.Data
-
+   
     type HomeModule(db:IDbConnectionFactory) as this =
         inherit NancyModule()
         do fancy this {
